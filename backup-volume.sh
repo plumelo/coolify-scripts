@@ -42,7 +42,7 @@ BACKUP_DIR=${BACKUP_DIR:-./volume-backup}
 echo "[ Backup Agent ] [ INFO ] Backup location is set to $BACKUP_DIR"
 
 # Set the backup file name based on the volume name
-BACKUP_FILE="${VOLUME_NAME}-backup.tar.gz"
+BACKUP_FILE="${VOLUME_NAME}.tar.gz"
 
 # Inform the user of the backup file name
 echo "[ Backup Agent ] [ INFO ] Backup file name is set to $BACKUP_FILE"
