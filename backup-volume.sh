@@ -14,7 +14,7 @@ done
 if [ -z $volume ]; then
   read -e -p "[ Backup Agent ] [ INPUT ] Please enter the Docker volume name to back up: " -i VOLUME_NAME
 else
-  $VOLUME_NAME=$volume
+  VOLUME_NAME=$volume
 fi
 
 # Inform the user of the set volume name
@@ -33,7 +33,7 @@ fi
 if [ -z $dir ]; then
 read -p "[ Backup Agent ] [ INPUT ] Please enter the directory to save the backup (Optional: press enter to use ./volume-backup): " BACKUP_DIR
 else
-  $BACKUP_DIR=$dir
+  BACKUP_DIR=$dir
 fi
 # If no directory is entered, default to './volume-backup'
 BACKUP_DIR=${BACKUP_DIR:-./volume-backup}
