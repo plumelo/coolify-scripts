@@ -31,7 +31,7 @@ fi
 
 # Prompt for the directory to save the backup
 if [ -z $dir ]; then
-read -p "[ Backup Agent ] [ INPUT ] Please enter the directory to save the backup (Optional: press enter to use ./volume-backup): " BACKUP_DIR
+  read -p "[ Backup Agent ] [ INPUT ] Please enter the directory to save the backup (Optional: press enter to use ./volume-backup): " BACKUP_DIR
 else
   BACKUP_DIR=$dir
 fi
