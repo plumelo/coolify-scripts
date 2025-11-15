@@ -15,7 +15,7 @@ done
 if [ -z $volume ]; then
   read -p "[ Restore Agent ] [ INPUT ] Enter the target Docker volume name to restore into: " TARGET_VOLUME
 else
-  VOLUME_NAME=$volume
+  TARGET_VOLUME=$volume
 fi
 
 
