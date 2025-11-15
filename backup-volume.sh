@@ -78,3 +78,7 @@ docker run --rm \
 
 # If everything succeeds, notify the user
 echo "[ Backup Agent ] [ SUCCESS ] Backup completed!"
+
+
+# Example:
+# docker volume ls -f "name=foo-" -q | xargs -I {} ./backup-volume.sh -v {} -d ./test2
